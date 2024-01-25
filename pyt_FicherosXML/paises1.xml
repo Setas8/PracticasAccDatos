@@ -1,0 +1,73 @@
+<Paises>
+  <Localidad numero="1">
+    <Continente>Africa</Continente>
+    <Pais>Angola</Pais>
+    <Capital>Luanda</Capital>
+    <Habitantes>
+        <mujeres>10000</mujeres>
+        <hombres>20000</hombres>
+    </Habitantes>
+  </Localidad>
+  <Localidad numero="2">
+    <Continente>America del Norte</Continente>
+    <Pais>Estados Unidos</Pais>
+    <Capital>Washington DC</Capital>
+    <Habitantes>
+        <mujeres>30000</mujeres>
+        <hombres>40000</hombres></Habitantes>
+  </Localidad>
+  <Localidad numero="3">
+    <Continente>America Central</Continente>
+    <Pais>Mexico</Pais>
+    <Capital>Ciudad de Mexico</Capital>
+    <Habitantes>
+        <mujeres>50000</mujeres>
+        <hombres>60000</hombres>
+    </Habitantes>
+  </Localidad>
+  <Localidad numero="4">
+    <Continente>America del Sur</Continente>
+    <Pais>Brasil</Pais>
+    <Capital>Brasilia</Capital>
+    <Habitantes>
+        <mujeres>70000</mujeres>
+        <hombres>80000</hombres>
+    </Habitantes>
+  </Localidad>
+  <Localidad numero="5">
+    <Continente>Europa</Continente>
+    <Pais>España</Pais>
+    <Capital>Madrid</Capital>
+    <Habitantes>
+        <mujeres>90000</mujeres>
+        <hombres>100000</hombres>
+    </Habitantes>
+  </Localidad>
+  <Localidad numero="6">
+    <Continente>Europa</Continente>
+    <Pais>Alemania</Pais>
+    <Capital>Berlin</Capital>
+    <Habitantes>
+        <mujeres>110000</mujeres>
+        <hombres>120000</hombres>
+    </Habitantes>
+  </Localidad>
+  <Localidad numero="7">
+    <Continente>Oceania</Continente>
+    <Pais>Australia</Pais>
+    <Capital>Camberra</Capital>
+    <Habitantes>
+        <mujeres>130000</mujeres>
+        <hombres>140000</hombres>
+    </Habitantes>
+  </Localidad>
+  <Localidad numero="8">
+    <Continente>Asia</Continente>
+    <Pais>Japon</Pais>
+    <Capital>Tokio</Capital>
+    <Habitantes>
+        <mujeres>150000</mujeres>
+        <hombres>160000</hombres>
+    </Habitantes>
+  </Localidad>
+</Paises>

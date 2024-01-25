@@ -1,0 +1,13 @@
+Numero 0 – 0 veces
+Numero 1 – 0 veces
+Numero 2 – 1 veces
+Numero 3 – 1 veces
+Numero 4 – 2 veces
+Numero 5 – 2 veces
+Numero 6 – 2 veces
+Numero 7 – 2 veces
+Numero 8 – 2 veces
+Numero 9 – 0 veces
+
+Media veces que se repite cualquier número: 1.2
+Moda: [4, 5, 6, 7, 8]

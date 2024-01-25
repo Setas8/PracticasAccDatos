@@ -1,0 +1,50 @@
+<Paises>
+  <Localidad numero="1">
+    <Continente>Africa</Continente>
+    <Pais>Angola</Pais>
+    <Capital>Luanda</Capital>
+    <Habitantes>2572000</Habitantes>
+  </Localidad>
+  <Localidad numero="2">
+    <Continente>America del Norte</Continente>
+    <Pais>Estados Unidos</Pais>
+    <Capital>Washington DC</Capital>
+    <Habitantes>735689</Habitantes>
+  </Localidad>
+  <Localidad numero="3">
+    <Continente>America Central</Continente>
+    <Pais>Mexico</Pais>
+    <Capital>Ciudad de Mexico</Capital>
+    <Habitantes>9754369</Habitantes>
+  </Localidad>
+  <Localidad numero="4">
+    <Continente>America del Sur</Continente>
+    <Pais>Brasil</Pais>
+    <Capital>Brasilia</Capital>
+    <Habitantes>2665035</Habitantes>
+  </Localidad>
+  <Localidad numero="5">
+    <Continente>Europa</Continente>
+    <Pais>España</Pais>
+    <Capital>Madrid</Capital>
+    <Habitantes>6640705</Habitantes>
+  </Localidad>
+  <Localidad numero="6">
+    <Continente>Europa</Continente>
+    <Pais>Alemania</Pais>
+    <Capital>Berlin</Capital>
+    <Habitantes>3613495</Habitantes>
+  </Localidad>
+  <Localidad numero="7">
+    <Continente>Oceania</Continente>
+    <Pais>Australia</Pais>
+    <Capital>Camberra</Capital>
+    <Habitantes>381488</Habitantes>
+  </Localidad>
+  <Localidad numero="8">
+    <Continente>Asia</Continente>
+    <Pais>Japon</Pais>
+    <Capital>Tokio</Capital>
+    <Habitantes>13942856</Habitantes>
+  </Localidad>
+</Paises>

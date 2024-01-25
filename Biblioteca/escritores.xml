@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Escritores>
+    <Libro id="1">
+        <Titulo>XML</Titulo>
+        <Autor>Antonio Gonzalez</Autor>
+    </Libro>
+    <Libro id="2">
+        <Titulo>Egipto Magico</Titulo>
+        <Autor>Pablo Moreno</Autor>
+    </Libro>
+    <Libro id="3">
+        <Titulo>Java Basico</Titulo>
+        <Autor>Enrique Martinez</Autor>
+    </Libro>
+    <Libro id="5">
+        <Titulo>Navegando por el Rhin</Titulo>
+        <Autor>Arthur Gil</Autor>
+    </Libro>
+    <Libro id="6">
+        <Titulo>Seguridad Informatica</Titulo>
+        <Autor>Juan Carlos Blazquez</Autor>
+    </Libro>
+    <Libro id="7">
+        <Titulo>Las Mejores Playas del Mundo</Titulo>
+        <Autor>Elisa Lopez</Autor>
+    </Libro>
+    <Libro id="10">
+        <Titulo>PHP</Titulo>
+        <Autor>Jorge Sanchez</Autor>
+    </Libro>
+</Escritores>

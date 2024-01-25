@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Animales>
+    <NodoPadre0 id="1">
+        <Hijo0>9</Hijo0>
+        <Hijo0>7</Hijo0>
+        <Hijo0>6</Hijo0>
+        <Hijo0>9</Hijo0>
+        <Hijo0>6</Hijo0>
+    </NodoPadre0>
+    <NodoPadre1 id="2">
+        <Hijo1>3</Hijo1>
+        <Hijo1>2</Hijo1>
+        <Hijo1>8</Hijo1>
+        <Hijo1>0</Hijo1>
+        <Hijo1>2</Hijo1>
+    </NodoPadre1>
+    <NodoPadre2 id="3">
+        <Hijo2>4</Hijo2>
+        <Hijo2>9</Hijo2>
+        <Hijo2>4</Hijo2>
+        <Hijo2>8</Hijo2>
+        <Hijo2>7</Hijo2>
+    </NodoPadre2>
+    <NodoPadre3 id="4">
+        <Hijo3>3</Hijo3>
+        <Hijo3>5</Hijo3>
+        <Hijo3>4</Hijo3>
+        <Hijo3>4</Hijo3>
+        <Hijo3>2</Hijo3>
+    </NodoPadre3>
+    <NodoPadre4 id="5">
+        <Hijo4>4</Hijo4>
+        <Hijo4>3</Hijo4>
+        <Hijo4>2</Hijo4>
+        <Hijo4>6</Hijo4>
+        <Hijo4>9</Hijo4>
+    </NodoPadre4>
+</Animales>

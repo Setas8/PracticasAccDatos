@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Editoriales>
+    <Libro id="1" tematica="Informatica">
+        <Editorial>Anaya</Editorial>
+        <FPublicacion>2001</FPublicacion>
+        <Idioma>ingles</Idioma>
+    </Libro>
+    <Libro id="2" tematica="Viajes">
+        <Editorial>Pais</Editorial>
+        <FPublicacion>2017</FPublicacion>
+        <Idioma>ingles</Idioma>
+    </Libro>
+    <Libro id="3" tematica="Informatica">
+        <Editorial>MacGraw Hill</Editorial>
+        <FPublicacion>2004</FPublicacion>
+        <Idioma>español</Idioma>
+    </Libro>
+    <Libro id="4" tematica="Cocina">
+        <Editorial>Planeta</Editorial>
+        <FPublicacion>1999</FPublicacion>
+        <Idioma>frances</Idioma>
+    </Libro>
+    <Libro id="5" tematica="Viajes">
+        <Editorial>almacen</Editorial>
+        <FPublicacion>2010</FPublicacion>
+        <Idioma>aleman</Idioma>
+    </Libro>
+    <Libro id="7" tematica="Viajes">
+        <Editorial>almacen</Editorial>
+        <FPublicacion>2000</FPublicacion>
+        <Idioma>español</Idioma>
+    </Libro>
+    <Libro id="9" tematica="Cocina">
+        <Editorial>Planeta</Editorial>
+        <FPublicacion>2002</FPublicacion>
+        <Idioma>italiano</Idioma>
+    </Libro>
+    <Libro id="10" tematica="Informatica">
+        <Editorial>Paraninfo</Editorial>
+        <FPublicacion>2018</FPublicacion>
+        <Idioma>ingles</Idioma>
+    </Libro>
+</Editoriales>

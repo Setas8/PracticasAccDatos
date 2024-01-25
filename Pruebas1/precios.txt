@@ -1,0 +1,9 @@
+1 Articulo1 15.59
+2 Articulo2 25.75
+3 Articulo3 5.25
+4 Articulo4 3.3
+5 Articulo5 12.1
+6 Articulo6 24.2
+7 Articulo7 18.23
+8 Articulo8 20
+9 Articulo9 9.4
