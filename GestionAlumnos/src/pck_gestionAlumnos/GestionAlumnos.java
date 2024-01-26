@@ -60,8 +60,8 @@ public class GestionAlumnos {
                         + "1.Alta alumno\n"
                         + "2.Mostrar datos alumno\n"
                         + "3.Borrar un alumno\n"
-                        + "4.Matricular alumno\n"   //////Comprobar
-                        + "5.\n"  ///Mostrar alumnos_asinatura
+                        + "4.Matricular alumno\n" //////Comprobar
+                        + "5.Mostrar asignaturas matriculadas\n" ///Mostrar alumnos_asinatura
                         + "0.Salir");
 
                 opcion = tcd.nextInt();
@@ -72,15 +72,24 @@ public class GestionAlumnos {
 
                 String buscar = "select * from alumnos where id_alumno = ?";
                 PreparedStatement buscarAlumno = conn.prepareStatement(buscar);
-                
+
                 String buscar2 = "select * from asignaturas where id_asignatura = ?";
                 PreparedStatement buscarAsignatura = conn.prepareStatement(buscar2);
-                
+
                 String eliminar = "delete from alumnos where id_alumno = ?";
                 PreparedStatement eliminarAlumno = conn.prepareStatement(eliminar);
 
                 String matricular = "insert into alumnos_asignaturas values(?,?,0)";
-                PreparedStatement matricularAlumno = conn.prepareStatement(eliminar);
+                PreparedStatement matricularAlum = conn.prepareStatement(eliminar);
+
+                String mostrarAsigMatricu = "select al.nombre, asi.nombre "
+                        + "from alumnos_asignaturas alas "
+                        + "join  alumnos al "
+                        + "on al.id_alumno = alas.id_alumno "
+                        + "join asignaturas asi "
+                        + "on asi.id_asignatura = alas.id_asignatura "
+                        + "where alas.id_alumno = ?";
+                PreparedStatement buscarMatriAlum = conn.prepareStatement(mostrarAsigMatricu);
 
                 switch (opcion) {
                     case 1:
@@ -109,13 +118,19 @@ public class GestionAlumnos {
                         break;
                     case 4:
                         System.out.println("Matricular al alumno nuevo en varias asignaturas");
-                        matricularAlumno(matricularAlumno,buscarAlumno, buscarAsignatura);
+                        matricularAlumno(matricularAlum, buscarAlumno, buscarAsignatura, st);
 
                         menu(conn, st);
                         break;
                     case 5:
-                        System.out.println("Consultar las asignaturas para las que está matriculado el nuevo\n"
-                                + "alumno y mostrarlas por pantalla");
+                        System.out.println("Consultar las asignaturas matriculadas");
+                        mostrarAlumnos(st);
+                        System.out.println("\nDime el id del alumno: ");
+                        id = tcd.nextInt();
+                        if (!buscaAlumno(buscarAlumno, id)) {
+                            System.out.println("No se encontró el alumno");
+                        }
+                        mostrarAsigMatricula(buscarMatriAlum, id);
                         menu(conn, st);
                         break;
                     case 0:
@@ -175,13 +190,15 @@ public class GestionAlumnos {
         String mostrar = "select * from asignaturas";
         ResultSet rs = st.executeQuery(mostrar);
         while (rs.next()) {
-            System.out.println(rs.getInt(1) + " " + rs.getInt(2) + " " + rs.getInt(3));
+            System.out.println(rs.getInt(1) + " " + rs.getString(2)
+                            + " " + rs.getString(3) + " " + rs.getDouble(4));
         }
 
     }
 
     private static boolean buscaAlumno(PreparedStatement ps, int id) throws SQLException {
 
+        System.out.println("=================");
         ResultSet rs;
         ps.setInt(1, id);
         rs = ps.executeQuery();
@@ -227,29 +244,52 @@ public class GestionAlumnos {
         }
     }
 
-    private static void matricularAlumno(PreparedStatement psInsert, PreparedStatement psBusAlu,PreparedStatement psBusAsi) throws SQLException {
+    private static void matricularAlumno(PreparedStatement psInsert, PreparedStatement psBusAlu, PreparedStatement psBusAsi, Statement st) throws SQLException {
         System.out.println("Id alumno: ");
         int idAl = tcd.nextInt();
         tcd.nextLine();
-        while (buscaAlumno(psBusAlu, idAl)) {
-            System.out.println("El id ya existe, introduce otro id: ");
+        //Comprobar que el alumno existe
+        while (!buscaAlumno(psBusAlu, idAl)) {
+            System.out.println("El alumno no se encuentra en la base de datos\n"
+                    + "Introduce otro id: ");
             idAl = tcd.nextInt();
             tcd.nextLine();
         }
-        
-        System.out.println("Id alumno: ");
+       
+        mostrarAsignaturas(st);
+        System.out.println("Id asignatura: ");
         int idAs = tcd.nextInt();
         tcd.nextLine();
-        while (buscaAlumno(psBusAsi, idAs)) {
-            System.out.println("El id ya existe, introduce otro id: ");
+        while (!buscaAsignatura(psBusAsi, idAs)) {
+            System.out.println("La asignautra no existe\nIntroduce otro id: ");
             idAs = tcd.nextInt();
             tcd.nextLine();
         }
+         System.out.println(idAl);
+         System.out.println(idAs);
         
-        psInsert.setInt(1, idAl);
+        //select * from alumnos_asignaturas where id_alumno = 4338289 and id_asignatura = 20598;
+
+        /*  psInsert.setInt(1, idAl);
         psInsert.setInt(2, idAs);
- 
-        psInsert.executeUpdate();
         
+        psInsert.executeUpdate();*/
+
+    }
+
+    private static void mostrarAsigMatricula(PreparedStatement ps, int id) throws SQLException {
+
+        ResultSet rs;
+        ps.setInt(1, id);
+        rs = ps.executeQuery();       
+        boolean sinRegistros = true;
+        while (rs.next()) {
+            System.out.println(rs.getString(1) + " - " + rs.getString(2));
+            sinRegistros = false;
+        }
+        if (sinRegistros) {
+            System.out.println("El alumno no se matriculó en ninguna asignatura");
+        }
+
     }
 }
