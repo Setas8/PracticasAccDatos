@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/alumno/Documents/NetBeansProjects/HibernateUniversidad/src/hibernateUniversidad/UniversidadMain.java</file>
+            <file>file:/C:/Users/alumno/Documents/NetBeansProjects/HibernateUniversidad/src/pojos/Profesor.hbm.xml</file>
+            <file>file:/C:/Users/alumno/Documents/NetBeansProjects/HibernateUniversidad/src/pojos/Profesor.java</file>
+            <file>file:/C:/Users/alumno/Documents/NetBeansProjects/HibernateUniversidad/src/hibernate.cfg.xml</file>
+            <file>file:/C:/Users/alumno/Documents/NetBeansProjects/HibernateUniversidad/src/hibernate.reveng.xml</file>
+            <file>file:/C:/Users/alumno/Documents/NetBeansProjects/HibernateUniversidad/src/pojos/Especialidad.hbm.xml</file>
+            <file>file:/C:/Users/alumno/Documents/NetBeansProjects/HibernateUniversidad/src/pojos/Especialidad.java</file>
+            <file>file:/C:/Users/alumno/Documents/NetBeansProjects/HibernateUniversidad/src/hibernateUniversidad/HibernateUtil.java</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 29-ene-2024 10:36:14 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Cambios" table="cambios" catalog="colegio" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="Id" />
+            <generator class="assigned" />
+        </id>
+        <property name="tipo" type="string">
+            <column name="Tipo" length="2" />
+        </property>
+        <property name="matricula" type="java.lang.Integer">
+            <column name="Matricula" />
+        </property>
+        <property name="incremento" type="java.lang.Integer">
+            <column name="Incremento" />
+        </property>
+    </class>
+</hibernate-mapping>
