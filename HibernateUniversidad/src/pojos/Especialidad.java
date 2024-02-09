@@ -52,7 +52,7 @@ public class Especialidad  implements java.io.Serializable {
 
     @Override
     public String toString() {
-        return "Especialidad{" + "cod=" + cod + ", nombre=" + nombre + '}';
+        return nombre + " (" + cod + ")";
     }
 
 

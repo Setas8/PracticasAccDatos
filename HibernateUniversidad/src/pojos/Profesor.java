@@ -53,7 +53,7 @@ public class Profesor  implements java.io.Serializable {
 
      public String mostrar() {
         
-        return this.especialidad.toString();
+        return "Profesor: " + id + ", nombre=" + nombre + ", apellidos=" + apellidos +  "\nEspecialidad=" + especialidad;
     }
     @Override
     public String toString() {

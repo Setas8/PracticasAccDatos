@@ -18,4 +18,13 @@
             <column name="Apellidos" length="30" />
         </property>
     </class>
+    <query name="id">
+        <![CDATA[FROM Profesor order by id]]>
+    </query>
+    <query name="nombre">
+        <![CDATA[FROM Profesor order by nombre]]>
+    </query> 
+    <query name="apellidos">
+        <![CDATA[FROM Profesor order by apellidos]]>
+    </query>  
 </hibernate-mapping>
