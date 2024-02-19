@@ -22,6 +22,12 @@ public class FutbolPrincipal {
         Session sesion = sf.openSession();
         Transaction t = sesion.beginTransaction();
         
+        //Sacar con un count el número de equipos select from equipos
+        //Array (numeroEquipos.lenght) para pg de todos los equipos posicion 0 del array equipo 1
+        //Array (numeroEquipos.lenght) para pp de todos los equipos posicion 0 del array equipo 1
+        //Array (numeroEquipos.lenght) para pe de todos los equipos posicion 0 del array equipo 1
+        //Array (numeroEquipos.lenght) para gf de todos los equipos posicion 0 del array equipo 1
+        //Array (numeroEquipos.lenght) para gc de todos los equipos posicion 0 del array equipo 1
         
         System.out.println("\n- - - -Equipos - - - - - ");
         Query qEqui = sesion.createQuery("From Equipos");
@@ -36,6 +42,21 @@ public class FutbolPrincipal {
         /*   for (int i = 0; i < listaPartidos.size(); i++) {
         System.out.println(listaPartidos.get(i).mostrarPartidos());
         }*/
+        System.out.println("\n- - - Estadísticas- - - - - ");
+        Query qEsta = sesion.createQuery("From Estadisticas");
+        List<Estadisticas> listaEstadistica = qEsta.list();
+              
+        /*   for (int i = 0; i < listaPartidos.size(); i++) {
+        System.out.println(listaPartidos.get(i).mostrarPartidos());
+        }*/
+        
+        Equipos eqL;
+        Equipos eqV;
+        Partidos par;
+        
+        //Iterator para recorrer set
+        
+        
         System.out.println("- - - - - - - - - - - - - - -");
         Estadisticas es = new Estadisticas();
         for (int i = 0; i < listaEquipos.size(); i++) {
