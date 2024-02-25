@@ -1,3 +1,7 @@
+drop database america;
+create database america;
+use america; 
+
 Create table Pais(
     Id tinyint primary key,
     Nombre Varchar(15),

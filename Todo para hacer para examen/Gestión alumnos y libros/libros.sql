@@ -1,3 +1,4 @@
+drop database libraria;
 create database libreria;
 use libreria; 
 

@@ -2,6 +2,7 @@ drop database futbol;
 create database Futbol;
 use Futbol;
 
+
 CREATE TABLE Equipos(
     CodEquipo   varchar(4) Primary Key,
     Nombre      varchar(30) not null,
