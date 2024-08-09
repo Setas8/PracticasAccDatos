@@ -66,7 +66,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 5. Open a pull request.
 
 ## License
-This project is licensed under the MIT License.
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ## Contact
 For any questions or inquiries, please contact:
