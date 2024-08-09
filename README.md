@@ -71,6 +71,7 @@ This project is licensed under the MIT License.
 ## Contact
 For any questions or inquiries, please contact:
 
-Your Name - your.email@example.com
-GitHub: your-username
+diegocuadradomm@gmail.com
+
+Setas8
    
